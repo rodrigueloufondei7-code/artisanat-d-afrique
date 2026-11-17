@@ -1,0 +1,16 @@
+CAPTURES D'ECRAN — ARTISANAT D'AFRIQUE
+
+01 Accueil
+02 Catalogue
+03 Inscription client
+04 Connexion client
+05 Panier
+06 Connexion administrateur
+07 Tableau de bord
+08 Gestion des articles
+09 Gestion du stock
+10 Gestion des fournisseurs
+11 Finances et dépenses
+12 Approvisionnements
+
+Images PNG issues des captures fournies.
