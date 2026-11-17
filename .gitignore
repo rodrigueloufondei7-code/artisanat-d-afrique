@@ -1,0 +1,29 @@
+
+# Dépendances Composer
+/vendor/
+/backend/vendor/
+
+# Secrets et configuration locale
+.env
+.env.*
+!.env.example
+
+# Fichiers temporaires
+*.log
+*.tmp
+/cache/
+/tmp/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Fichiers téléversés localement
+/web/uploads/*
+!/web/uploads/.gitkeep
+
+# Sauvegardes
+*.bak
+*.old
+*.sql.zip
