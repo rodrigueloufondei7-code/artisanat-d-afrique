@@ -138,3 +138,41 @@ Projet de portfolio — en cours d'amélioration.
 ---
 
 **Artisanat d’Afrique** — Valoriser l'artisanat africain grâce au numérique.
+
+## 📸 Captures d'écran
+
+### 1. Page d'accueil
+![Accueil](screenshots/01-accueil.png)
+
+### 2. Catalogue des articles
+![Catalogue](screenshots/02-catalogue.png)
+
+### 3. Inscription client
+![Inscription](screenshots/03-inscription.png)
+
+### 4. Connexion client
+![Connexion](screenshots/04-connexion-client.png)
+
+### 5. Panier
+![Panier](screenshots/05-panier.png)
+
+### 6. Connexion administrateur
+![Connexion admin](screenshots/06-connexion-admin.png)
+
+### 7. Tableau de bord
+![Dashboard](screenshots/07-dashboard.png)
+
+### 8. Gestion des articles
+![Articles](screenshots/08-articles.png)
+
+### 9. Gestion du stock
+![Stock](screenshots/09-stock.png)
+
+### 10. Fournisseurs
+![Fournisseurs](screenshots/10-fournisseurs.png)
+
+### 11. Finances
+![Finances](screenshots/11-finances.png)
+
+### 12. Approvisionnements
+![Approvisionnements](screenshots/12-approvisionnements.png)
