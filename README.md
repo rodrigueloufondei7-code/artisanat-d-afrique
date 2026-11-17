@@ -176,3 +176,21 @@ Projet de portfolio — en cours d'amélioration.
 
 ### 12. Approvisionnements
 ![Approvisionnements](screenshots/12-approvisionnements.png)
+
+
+## 📞 Contact
+
+Vous souhaitez collaborer avec moi, discuter de ce projet ou me confier une réalisation ?
+
+N'hésitez pas à me contacter :
+
+- 📧 **Email :** [rodrigueloufondei7@gmail.com](mailto:rodrigueloufondei7@gmail.com)
+- 💬 **WhatsApp :** [Me contacter sur WhatsApp](https://wa.me/2290169603098)
+- 💻 **GitHub :** [rodrigueloufondei7-code](https://github.com/rodrigueloufondei7-code)
+
+Je suis ouvert aux collaborations, aux projets de développement web et aux opportunités professionnelles.
+
+---
+
+Développé avec passion ❤️
+
