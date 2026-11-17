@@ -1,0 +1,25 @@
+ARTISANAT D'AFRIQUE — REFONTE GLOBALE DE L'INTERFACE
+
+CONTENU
+- Refonte enrichie de la page d'accueil de la boutique.
+- Ajout de sections : démarche, savoir-faire, étapes de commande et questions fréquentes.
+- Feuille de style commune pour harmoniser les pages publiques et administrateur.
+- Navigation commune ajoutée à l'espace administrateur.
+- Pages client et administrateur existantes habillées avec le nouveau thème.
+- Les anciens points d'entrée vides redirigent désormais vers les pages utiles.
+- Les fichiers API, configuration de base de données, traitements métier et dépendances vendor sont conservés.
+
+INSTALLATION
+1. Faites une copie de sauvegarde de votre dossier actuel artisanat_afrique.
+2. Décompressez cette archive.
+3. Copiez le dossier artisanat_afrique dans C:\xampp\htdocs\ en remplaçant les fichiers du projet.
+4. Gardez votre base de données artisanat_afrique existante : aucun script SQL n'est requis pour cette refonte visuelle.
+5. Vérifiez que Apache et MySQL sont démarrés dans XAMPP.
+6. Ouvrez : http://localhost/artisanat_afrique/web/
+
+IMPORTANT
+- Les images du diaporama de la page d'accueil sont chargées depuis Internet.
+- Les fonctions dynamiques (connexion, panier, commandes, stock, fournisseurs, approvisionnements, finances et factures) utilisent les mêmes traitements PHP/API et la même base qu'avant.
+- Le code PHP a été vérifié avec php -l. Cela ne remplace pas un essai fonctionnel dans votre environnement XAMPP.
+- La feuille de style commune se trouve dans web/assets/css/refonte.css.
+- La navigation administrateur se trouve dans web/admin/_navigation.php.

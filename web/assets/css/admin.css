@@ -1,0 +1,114 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #252b26;
+}
+
+.login-body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background: #f3f5f0;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 440px;
+}
+
+.login-brand {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.brand-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
+    border-radius: 16px;
+    background: #315c43;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.login-brand h1 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.login-brand p {
+    color: #777f77;
+    font-size: 14px;
+}
+
+.login-card {
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+}
+
+.login-card h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.login-description {
+    color: #7b827c;
+    font-size: 14px;
+    margin-bottom: 27px;
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-control {
+    min-height: 48px;
+    border: 1px solid #dfe4df;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: #315c43;
+    box-shadow: 0 0 0 3px rgba(49, 92, 67, 0.12);
+}
+
+.btn-admin {
+    min-height: 49px;
+    background: #315c43;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.btn-admin:hover {
+    background: #254832;
+    color: white;
+}
+
+.login-footer {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 12px;
+    color: #899089;
+}
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 25px 20px;
+    }
+}

@@ -1,0 +1,76 @@
+/* Identité visuelle commune — Artisanat d'Afrique */
+:root{
+ --aa-forest:#315348;--aa-forest-dark:#263b34;--aa-terracotta:#b96545;
+ --aa-terracotta-dark:#985039;--aa-ochre:#c99a4b;--aa-cream:#f7f3eb;
+ --aa-ink:#302d29;--aa-muted:#77736d;--aa-line:#e8e1d7;
+ --aa-shadow:0 14px 38px rgba(49,42,34,.08);
+}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--aa-ink);background:var(--aa-cream)}
+a{transition:color .2s ease,background .2s ease}
+.navbar{background:rgba(255,255,255,.97)!important;backdrop-filter:blur(12px);box-shadow:0 5px 24px rgba(48,40,31,.06)!important}
+.navbar-brand{color:#3c5147!important;font-weight:850;letter-spacing:-.035em}
+.nav-link{font-weight:600;color:#554f48}
+.nav-link:hover,.nav-link:focus{color:var(--aa-terracotta)!important}
+.btn{border-radius:10px;font-weight:650;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary,.btn-principal,.btn-admin{background:var(--aa-terracotta)!important;border-color:var(--aa-terracotta)!important;color:#fff!important}
+.btn-primary:hover,.btn-principal:hover,.btn-admin:hover{background:var(--aa-terracotta-dark)!important;border-color:var(--aa-terracotta-dark)!important}
+.btn-success{background:#6f806b!important;border-color:#6f806b!important;color:#fff!important}
+.btn-success:hover{background:#596c56!important;border-color:#596c56!important}
+.btn-outline-primary,.btn-outline-success{color:var(--aa-terracotta)!important;border-color:#c98b70!important}
+.btn-outline-primary:hover,.btn-outline-success:hover{background:var(--aa-terracotta)!important;border-color:var(--aa-terracotta)!important;color:white!important}
+.btn-warning{background:var(--aa-ochre)!important;border-color:var(--aa-ochre)!important;color:#30291f!important}
+.btn-outline-warning{color:#916a2e!important;border-color:#c99a4b!important}
+.btn-outline-dark{border-color:#8a8178!important;color:#514940!important}
+.btn-outline-dark:hover{background:#514940!important;color:#fff!important}
+.form-control,.form-select{border:1px solid #ddd5ca;border-radius:10px;min-height:44px}
+.form-control:focus,.form-select:focus{border-color:#c98b70;box-shadow:0 0 0 .22rem rgba(185,101,69,.13)}
+.form-label{font-weight:650;color:#4e4841}
+.card,.content-card,.form-card,.account-card,.login-card,.stat-card,.summary-card,.table-responsive{
+ border-color:var(--aa-line);border-radius:16px;box-shadow:var(--aa-shadow)
+}
+.card{overflow:hidden}
+.card-header{background:#f5f0e8;border-bottom:1px solid var(--aa-line);font-weight:750}
+h1,h2,h3,h4,h5,.page-title{color:#3e5147;letter-spacing:-.025em}
+.table{--bs-table-bg:transparent}
+.table thead th{background:#f2ede5;color:#62564b;font-size:.82rem;text-transform:uppercase;letter-spacing:.045em;border-bottom:1px solid #e4dbcf;white-space:nowrap}
+.table td,.table th{vertical-align:middle}
+.table tbody tr:hover{background:#fbf7f1}
+.badge{font-weight:650;letter-spacing:.01em;padding:.48em .7em}
+.alert{border:0;border-radius:12px}
+.page-container,.main-container{padding-top:36px;padding-bottom:56px}
+footer{background:#302d29;color:#fff}
+footer a{color:#ead9c1}
+img{max-width:100%}
+:focus-visible{outline:3px solid rgba(201,154,75,.75);outline-offset:2px}
+.info-section,.steps-section,.faq-section{background:#fff}
+.section-intro{max-width:650px;color:#77736d;line-height:1.75}
+.info-card,.step-card{height:100%;padding:28px;border:1px solid var(--aa-line);border-radius:18px;background:#fff;box-shadow:0 10px 28px rgba(48,40,31,.05);transition:transform .25s ease,box-shadow .25s ease}
+.info-card:hover,.step-card:hover{transform:translateY(-5px);box-shadow:var(--aa-shadow)}
+.info-icon{width:52px;height:52px;display:grid;place-items:center;border-radius:15px;background:#f5e9df;color:var(--aa-terracotta);font-size:1.45rem;margin-bottom:20px}
+.info-card h3,.step-card h3{font-size:1.12rem;font-weight:800;color:#51483e}
+.info-card p,.step-card p{color:#77736d;line-height:1.7;margin-bottom:0}
+.step-card{position:relative;padding-top:34px}
+.step-number{display:inline-block;color:var(--aa-terracotta);font-size:.78rem;font-weight:850;letter-spacing:.12em;margin-bottom:18px}
+.step-card>i{display:block;color:var(--aa-terracotta);font-size:1.7rem;margin-bottom:15px}
+.artisan-accordion .accordion-item{border:1px solid var(--aa-line);border-radius:12px!important;margin-bottom:12px;overflow:hidden}
+.artisan-accordion .accordion-button{font-weight:750;color:#51483e;background:#fff;box-shadow:none}
+.artisan-accordion .accordion-button:not(.collapsed){background:#f7eee6;color:var(--aa-terracotta-dark)}
+.artisan-accordion .accordion-body{color:#77736d;line-height:1.75}
+.account-header{background:linear-gradient(110deg,rgba(49,42,36,.94),rgba(153,91,62,.86)),url('https://images.unsplash.com/photo-1552683578-311bbc6fd40b?auto=format&fit=crop&w=1800&q=80') center/cover;color:#fff;padding:48px 20px}
+.account-header h1{color:#fff}
+.account-card{background:#fff;border:1px solid var(--aa-line);border-radius:18px;padding:28px;height:100%}
+.profile-icon{width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#f5e9df;color:var(--aa-terracotta);font-size:32px;margin-bottom:20px}
+.info-label{color:#8a8178;font-size:.88rem;margin-bottom:4px}
+.info-value{font-weight:700;overflow-wrap:anywhere}
+.account-card .btn-principal{background:var(--aa-terracotta)!important}
+.admin-navigation{position:sticky;top:0;z-index:1030;background:linear-gradient(105deg,#302d29,#4b4037);color:#fff;box-shadow:0 7px 22px rgba(36,30,25,.16)}
+.admin-navigation .admin-nav-inner{max-width:1320px;margin:auto;padding:11px 22px;display:flex;align-items:center;gap:18px}
+.admin-navigation .admin-brand{color:#fff;text-decoration:none;font-weight:850;white-space:nowrap;letter-spacing:-.02em}
+.admin-navigation .admin-links{display:flex;align-items:center;gap:5px;overflow-x:auto;flex:1;scrollbar-width:thin}
+.admin-navigation .admin-links a{color:rgba(255,255,255,.84);text-decoration:none;font-size:.83rem;font-weight:650;white-space:nowrap;padding:9px 11px;border-radius:8px}
+.admin-navigation .admin-links a:hover,.admin-navigation .admin-links a.active{background:rgba(201,154,75,.2);color:#f5d9a6}
+.admin-navigation .admin-user{font-size:.8rem;color:#ead9c1;white-space:nowrap}
+@media(max-width:900px){.admin-navigation .admin-nav-inner{align-items:flex-start;flex-direction:column;gap:8px}.admin-navigation .admin-links{width:100%}.admin-navigation .admin-user{display:none}}
+@media(max-width:767px){.page-container,.main-container{padding-top:24px;padding-bottom:36px}.card,.content-card,.form-card,.account-card{border-radius:13px}.info-card,.step-card{padding:22px}.table{font-size:.88rem}}

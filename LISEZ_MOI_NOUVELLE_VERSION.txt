@@ -1,0 +1,25 @@
+ARTISANAT D'AFRIQUE — VERSION REPRISE
+
+MODIFICATIONS PRINCIPALES
+- Refonte du tableau de bord administrateur : bannière d'accueil illustrée, fond photographique, statistiques mieux hiérarchisées, alertes de stock et accès rapides.
+- Harmonisation de la palette sur les pages HTML du client et de l'administration : terracotta, ocre, beige, anthracite et vert en accent.
+- Refonte de la feuille de style commune web/assets/css/refonte.css.
+- Correction de l'écart visuel de la page client/mon_compte.php : suppression de son ancien thème isolé et utilisation du thème commun.
+- Ajout d'une section vidéo YouTube en bas de la page d'accueil publique.
+- Ajout du script SQL ajouter_15_articles.sql qui ajoute 15 articles avec des URLs d'images hébergées sur des sites externes. Les catégories manquantes sont créées automatiquement et les articles déjà présents ne sont pas ajoutés une seconde fois par nom.
+
+INSTALLATION
+1. Sauvegardez votre dossier C:\xampp\htdocs\artisanat_afrique et votre base MySQL.
+2. Décompressez cette archive et remplacez le dossier du projet par le dossier artisanat_afrique fourni.
+3. Ne supprimez pas votre base de données actuelle.
+4. Pour ajouter les 15 nouveaux articles : ouvrez phpMyAdmin, sélectionnez la base artisanat_afrique, ouvrez l'onglet Importer, choisissez ajouter_15_articles.sql puis lancez l'importation.
+5. Démarrez Apache et MySQL dans XAMPP.
+6. Ouvrez http://localhost/artisanat_afrique/web/
+
+À SAVOIR
+- Les 15 nouvelles images sont référencées par des URL externes dans image_url. Une connexion Internet est donc nécessaire pour les afficher. La disponibilité des images dépend des sites qui les hébergent.
+- Les visuels proviennent de pages de produits et de catalogues artisanaux consultés en ligne. Avant une mise en production commerciale, vérifiez les conditions d'utilisation et les droits de réutilisation des images auprès des hébergeurs ou vendeurs.
+- La vidéo intégrée est un documentaire YouTube sur les ateliers de bogolan à Ségou (Mali). Si l'intégration est bloquée par les paramètres YouTube ou le navigateur, le lien « Voir la vidéo sur YouTube » reste disponible.
+- Les traitements PHP, les routes API, la base de données et les dépendances existantes ont été conservés. Le script SQL d'articles est séparé et doit être importé volontairement.
+- Les fichiers PHP du dossier web ont été vérifiés avec php -l. Ce contrôle ne remplace pas un essai réel dans votre XAMPP.
+- Les appels API et les fonctionnalités interactives n'ont pas pu être testés sur votre base MySQL locale depuis cet environnement.
