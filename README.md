@@ -1,91 +1,140 @@
-# Artisanat d’Afrique
+# Artisanat d’Afrique 🇧🇯
 
-Application web de boutique et de gestion d’articles artisanaux. Ce dépôt est présenté comme **projet de portfolio** : il permet de consulter le code et d’installer une version locale pour découvrir les fonctionnalités développées.
+**Plateforme web de vente et de gestion d’articles artisanaux africains.**
 
-## Présentation
+Artisanat d’Afrique est une application web développée avec PHP et MySQL. Elle vise à faciliter la présentation et la vente d'articles artisanaux tout en proposant un espace d'administration pour gérer les activités commerciales.
 
-Artisanat d’Afrique regroupe une interface destinée aux clients et un espace d’administration pour gérer une boutique d’articles artisanaux.
+## Présentation du projet
 
-### Fonctionnalités présentes dans le code
+La plateforme comprend deux espaces principaux :
 
-- Espace client : inscription, connexion, catalogue, panier, commande, historique des commandes et compte client.
-- Espace administrateur : authentification, tableau de bord, gestion des articles et des commandes.
-- Gestion des stocks : mouvements, historique, alertes et approvisionnements.
-- Gestion des fournisseurs et des dépenses.
-- Consultation des informations financières.
-- Génération de factures PDF avec Dompdf.
-- API PHP pour l’authentification, les catégories, les articles, les commandes et les statistiques.
+- **Espace client :** inscription, connexion, consultation des articles, panier et suivi des commandes.
+- **Espace administrateur :** gestion des articles, commandes, stocks, fournisseurs, approvisionnements et finances.
 
-> Les fonctionnalités listées correspondent aux modules présents dans le code source. Elles ne constituent pas une certification de sécurité ni une garantie de fonctionnement sur tous les environnements.
+## Fonctionnalités
 
-## Technologies
+### Espace client
+- Création de compte et authentification.
+- Consultation du catalogue d'articles.
+- Gestion du panier.
+- Passage et consultation des commandes.
+- Gestion du compte client.
 
-- PHP et PDO
-- MySQL / MariaDB
-- HTML, CSS et JavaScript
-- Bootstrap 5 et Bootstrap Icons
-- Composer
-- Dompdf pour les factures PDF
+### Administration
+- Tableau de bord.
+- Gestion des articles et des catégories.
+- Gestion des commandes.
+- Suivi des stocks et historique des mouvements.
+- Alertes de stock faible.
+- Gestion des fournisseurs.
+- Gestion des approvisionnements.
+- Gestion des dépenses et des finances.
+- Génération de factures PDF.
 
-## Arborescence principale
+## Technologies utilisées
+
+| Technologie | Utilisation |
+|---|---|
+| PHP | Développement côté serveur |
+| MySQL | Gestion de la base de données |
+| HTML | Structure des pages |
+| CSS | Mise en forme et interface |
+| JavaScript | Interactions côté client |
+| Composer | Gestion des dépendances PHP |
+| Dompdf | Génération de factures PDF |
+
+## Organisation du projet
 
 ```text
-artisanat_afrique/
+artisanat-d-afrique/
+│
 ├── backend/
-│   ├── api/                 # API et routes
-│   ├── config/db.php        # Connexion PDO
-│   └── uploads/             # Répertoire des fichiers téléversés
-├── database/schema.sql     # Structure SQL sans données personnelles
+│   ├── api/
+│   └── config/
+│
+├── database/
+│   └── schema.sql
+│
 ├── web/
-│   ├── admin/               # Espace administrateur
-│   ├── client/              # Espace client
-│   ├── assets/              # CSS et ressources
-│   └── index.php            # Page d’accueil
+│   ├── admin/
+│   ├── client/
+│   └── assets/
+│
+├── ajouter_15_articles.sql
 ├── composer.json
 ├── composer.lock
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
-## Installation locale avec XAMPP
+## Installation locale
 
-1. Installer XAMPP avec Apache, MySQL et PHP. Activer les extensions PHP nécessaires, notamment `pdo_mysql`, `curl`, `mbstring` et `dom`.
-2. Copier le dossier `artisanat_afrique` dans `C:\xampp\htdocs\`.
-3. Démarrer Apache et MySQL.
-4. Dans phpMyAdmin, créer une base nommée `artisanat_afrique` avec le jeu de caractères `utf8mb4`.
-5. Importer `database/schema.sql` dans cette base. Ce fichier crée les tables mais **ne contient aucun compte utilisateur, aucune commande et aucun catalogue de démonstration**.
-6. Vérifier la connexion à la base dans `backend/config/db.php`. Par défaut, le fichier utilise les paramètres habituels de XAMPP (`localhost`, base `artisanat_afrique`, utilisateur `root`, mot de passe vide). Pour un autre environnement, définir les variables `DB_HOST`, `DB_NAME`, `DB_USER` et `DB_PASS` dans l’environnement PHP.
-7. Ouvrir un terminal dans le dossier du projet et exécuter :
+### Prérequis
 
-   ```bash
-   composer install
-   ```
+- XAMPP ou un environnement Apache/PHP/MySQL.
+- PHP 8 ou version compatible avec les dépendances.
+- Composer.
 
-8. Ouvrir `http://localhost/artisanat_afrique/web/` dans le navigateur.
+### Étapes
 
-## Données de démonstration et accès administrateur
+1. Cloner le dépôt :
 
-Le schéma public est volontairement vierge : les données du dump fourni ont été exclues afin de ne pas publier de renseignements clients, de mots de passe hachés ou de jetons d’API. Le script `ajouter_15_articles.sql` est un script complémentaire d’insertion d’articles et de catégories ; il ne remplace pas le schéma complet.
+```bash
+git clone https://github.com/rodrigueloufondei7-code/artisanat-d-afrique.git
+```
 
-L’inscription publique crée un compte client. Aucun identifiant administrateur de démonstration n’est fourni dans ce dépôt. Pour présenter l’espace d’administration, configurez un compte administrateur de test dans une base locale dédiée, sans publier ses identifiants ni son empreinte de mot de passe.
+2. Placer le projet dans le répertoire `htdocs` de XAMPP.
 
-## Points à connaître avant un déploiement en ligne
+3. Créer une base de données MySQL nommée :
 
-- Plusieurs pages PHP utilisent encore des chemins d’API contenant `http://localhost/artisanat_afrique/` et certains chemins de ressources commencent par `/artisanat_afrique/`. L’application est donc préparée pour une installation locale XAMPP sous ce chemin ; une adaptation des URL est nécessaire pour un autre domaine ou un sous-dossier différent.
-- Le paramètre de cookie de session `secure` et la configuration des sessions doivent être adaptés à HTTPS en production.
-- Le dépôt ne fournit pas d’hébergement PHP/MySQL. GitHub sert à héberger le code source, pas à exécuter directement cette application PHP.
-- Avant tout usage réel, effectuer une revue de sécurité complète (authentification, autorisations, validation des entrées, téléversements, sessions, CSRF, configuration serveur et sauvegardes).
+```text
+artisanat_afrique
+```
 
-## Confidentialité et sécurité du dépôt
+4. Importer le fichier `database/schema.sql` dans phpMyAdmin.
 
-- Ne jamais ajouter de mots de passe, jetons, clés, exports de base réels ou fichiers `.env` personnels.
-- Le fichier `database/schema.sql` ne contient que la structure de la base, sans lignes `INSERT`.
-- Les fichiers présents dans `backend/uploads/` sont ignorés par Git, sauf le fichier `.gitkeep`.
-- Le dossier `vendor/` est ignoré ; les dépendances sont restaurées avec `composer install` à partir de `composer.json` et `composer.lock`.
+5. Si tu souhaites charger les 15 articles de démonstration, importer également `ajouter_15_articles.sql`.
 
-## Captures d’écran
+6. Configurer les paramètres de connexion à MySQL dans :
 
-Pour enrichir le portfolio, ajoutez des captures anonymisées dans `docs/screenshots/` : accueil, catalogue, panier, tableau de bord administrateur, gestion des articles et facture PDF. Vérifiez qu’aucune adresse e-mail, donnée client ou information de connexion n’est visible.
+```text
+backend/config/db.php
+```
 
-## Statut du projet
+7. Installer les dépendances :
 
-Projet PHP/MySQL de portfolio, préparé pour consultation publique du code et installation locale. Il n’est pas présenté comme une version prête à être déployée en production.
+```bash
+composer install
+```
+
+8. Ouvrir le projet dans ton navigateur à l'adresse :
+
+```text
+http://localhost/artisanat_afrique/web/
+```
+
+Adapte l'URL si ton environnement local utilise un autre chemin.
+
+## Base de données
+
+La structure de la base de données est disponible dans `database/schema.sql`.
+
+Le fichier `ajouter_15_articles.sql` permet d'ajouter des articles de démonstration.
+
+## Sécurité
+
+- Ne publiez jamais de mots de passe, clés secrètes ou jetons d'authentification.
+- Configurez vos propres identifiants de base de données.
+- N'utilisez pas de véritables données personnelles dans les démonstrations.
+
+## Objectif du projet
+
+Ce projet a pour objectif de mettre en pratique le développement web, la conception d'une base de données relationnelle, la programmation PHP et la création d'un système de gestion commerciale.
+
+## Statut
+
+Projet de portfolio — en cours d'amélioration.
+
+---
+
+**Artisanat d’Afrique** — Valoriser l'artisanat africain grâce au numérique.
